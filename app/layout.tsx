@@ -1,8 +1,22 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import localFont from "next/font/local";
+import "./styles/main.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const Nephilm = localFont({
+  src: [
+    {
+      path: './styles/vendor/font/Nephilm.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './styles/vendor/font/Nephilm Italic.otf',
+      weight: '400',
+      style: 'italic',
+    }
+  ],
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={Nephilm.className}>{children}</body>
     </html>
   );
 }

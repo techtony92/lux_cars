@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #212423;
+  overflow: hidden;
+}
+
+#mainHeading {
+  font-size: 14.2rem;
+  color: #f1f1f1;
+  font-weight: 700;
+}
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 4rem 0rem;
+}
+#landing #backgroundGrid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(7, minmax(360px, 1fr));
+  grid-template-rows: repeat(3, 230px);
+  row-gap: 2rem;
+  column-gap: 2rem;
+  position: absolute;
+  z-index: -99;
+}
+#landing #landingCTA {
+  /* For positioning, for font settings - check typography */
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  height: auto;
+  width: auto;
+}
+
+#menu {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  z-index: 99;
+}
+
+#menu.collapsed {
+  width: 125px;
+  height: 125px;
+  background: #333;
+}
+#menu.collapsed .menuItem {
+  display: none;
+}
+
+.gridItem {
+  background: url("/benz-2018.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 4/3;
+  background-position: center center;
+  object-fit: cover;
+  width: 100%;
+  height: 230px;
+  color: #f1f1f1;
+  border-radius: 0.6rem;
+  box-shadow: inset 300px 350px 10px 10px rgba(37, 49, 43, 0.463);
+}
+
+/*# sourceMappingURL=main.css.map */

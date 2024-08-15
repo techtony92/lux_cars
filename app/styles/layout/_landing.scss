@@ -1,0 +1,27 @@
+#landing{
+    width:100%;
+    height:100vh;
+    position: relative;
+    padding:4rem 0rem;
+    #backgroundGrid{
+        display:grid;
+        height:100%;
+        width:100%;
+        grid-template-columns: repeat(7, minmax(360px, 1fr));
+        grid-template-rows: repeat(3, 230px);
+        row-gap: 2rem;
+        column-gap: 2rem;
+        position: absolute;
+        z-index:-99;
+    }
+
+    #landingCTA{
+         /* For positioning, for font settings - check typography */
+        position:absolute;
+        bottom:0;
+        left:10%;
+        height:auto;
+        width:auto;
+
+    }
+}

@@ -1,0 +1,11 @@
+// ---- Base --- //
+@import "./base/globals";
+@import "./base/variables";
+@import "./base/typography";
+// ---- pages --- //
+@import "./pages/home";
+// ---- layout --- //
+@import "./layout/landing";
+// ---- Components --- //
+@import "./components/menu";
+@import "./components/grid";
